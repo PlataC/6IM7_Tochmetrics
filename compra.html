@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <link href="style1.css" rel="stylesheet">
+    <title>Compra</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="style1.css">
 
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
@@ -169,48 +169,97 @@
         </div>
     </nav>
 
-    <!--Fin de la barra de navegación-->
-
-
+    <!--Final barra de navegación-->
+    
+    <!--Aquí va lo del body-->
     <div style="height: 100px;"></div>
-    <h1>Eventos destacados</h1>
-    <div id="screen" class="content-section-b">
-       
-        <div class="row wow bounceInUp" >
-          <div id="owl-demo" class="owl-carousel">
-            
-            <a href="GPMexico.html" target="_blank" class="">
-                <div class="item">
-                    <img  class="img-responsive img-rounded" src="img/GpMexico.jpg" alt="Owl Image">
-                </div>
-            </a>
-            
-           <a href="#" target="_blank" class="">
-                <div class="item">
-                    <img  class="img-responsive img-rounded" src="img/caifanes.png" alt="Owl Image">
-                </div>
-            </a>
-            
-            <a href="#" target="_blank" class="">
-                <div class="item">
-                    <img  class="img-responsive img-rounded" src="img/TheKillers.jpeg" alt="Owl Image">
-                </div>
-            </a>
-            
-            <a href="#" target="_blank" class="">
-                <div class="item">
-                    <img  class="img-responsive img-rounded" src="img/anastasia.png" alt="Owl Image">
-                </div>
-            </a>
-            
-           
-            
 
-          </div>       
-      </div>
+
+    <h1 align="center">Pago</h1>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+
+      <!--Agrega aquí la dirección del HTML del boleto-->
+
+      <form action="confirmacion.html"> 
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Correo Electronico</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> FAN ID</label>
+            <input type="text" id="adr" name="address" placeholder="1A2B3C4D">
+            <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Estado</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Pago</h3>
+            <label for="fname">Tarjetas aceptadas</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Nombre del Titular de la Tarjeta</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Número Tarjeta de Crédito</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Mes</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Año</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continuar con la Compra" class="btn">
+      </form>
     </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Formula 1 Gran Premio de México 2024</a> <span class="price">$4,500</span></p>
+      
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$4,500</b></span></p>
+    </div>
+  </div>
+</div>
 
-    <section class="footer">
+    <!--Aquí finaliza lo del body de la página-->
+
+    <!--Aquí empieza el footer-->
+
+      <section class="footer">
         <div class="footer-row">
           <div class="footer-col">
             <h4>Info</h4>
@@ -265,14 +314,7 @@
         </div>
       </section>
 
-
-<!-- Javascript Library Files -->
-
- <script src="js/jquery-1.10.2.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/script.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.magnific-popup.js"></script> 
-
+      <!--Aquí finaliza el footer-->
+    
 </body>
 </html>
