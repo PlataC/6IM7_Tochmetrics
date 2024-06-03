@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav .nav-links a:hover {
+    background: #444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
+.ticket-box {
+    margin-top: 300px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.ticket-box h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.ticket-box p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.ticket-box .btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.ticket-box .btn.cancel {
+    background: #dc3545;
+}
+
+.ticket-box .btn:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .icons {
+    margin-top: 10px;
+}
+
+.footer .icons i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .icons i:hover {
+    color: #007bff;
+}
