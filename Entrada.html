@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Eventos</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+      <link rel="stylesheet" href="style1.css">
+      
+      <script src="script.js" defer></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .ticket {
+        border: 2px solid #ccc;
+        padding: 20px;
+        max-width: 600px;
+        margin: auto;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header h1 {
+        color: red;
+    }
+    .header .empresa {
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .content div {
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    .content div span {
+        display: block;
+        font-weight: bold;
+    }
+    .qr {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+  <body>
+      <nav>
+          <div class="wrapper">
+              <div class="logo"><a href="index.html">Coddev</a></div>
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                    <a href="#" class="desktop-item">Conciertos</a>
+      
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Conciertos</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="conciertos.png" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Todos los Conciertos</a></li>
+                                    <li><a href="Eventos.html">Infantil</a></li>
+                                    <li><a href="Eventos.html">Pop</a></li>
+                                    <li><a href="Eventos.html">Rock</a></li>
+                                    <li><a href="Eventos.html">Festivales</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Flamenco</a></li>
+                                    <li><a href="Eventos.html">Jazz</a></li>
+                                    <li><a href="Eventos.html">Urbano</a></li>
+                                    <li><a href="Eventos.html">Electrónica</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Instrumental</a></li>
+                                  <li><a href="Eventos.html">Reggae</a></li>
+                                  <li><a href="Eventos.html">Country</a></li>
+                                  <li><a href="Eventos.html">Folk</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Teatro</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Teatro</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="teatro.png" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Todos los Eventos Teatro</a></li>
+                                    <li><a href="Eventos.html">Ballet</a></li>
+                                    <li><a href="Eventos.html">Danza</a></li>
+                                    <li><a href="Eventos.html">Obras de Teatro</a></li>
+                                    <li><a href="Eventos.html">Comedia</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Moda</a></li>
+                                    <li><a href="Eventos.html">Drama</a></li>
+                                    <li><a href="Eventos.html">Exhibiciones</a></li>
+                                    <li><a href="Eventos.html">Orquestas</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Opera</a></li>
+                                  <li><a href="Eventos.html">Música Clásica</a></li>
+                                  <li><a href="Eventos.html">Musicales</a></li>
+                                  <li><a href="Eventos.html">Coros</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Deportes</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Deportes</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="deportes.png" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Automovilismo</a></li>
+                                    <li><a href="Eventos.html">Fútbol</a></li>
+                                    <li><a href="Eventos.html">Tenis</a></li>
+                                    <li><a href="Eventos.html">Box</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Toreo</a></li>
+                                    <li><a href="Eventos.html">Bésibol</a></li>
+                                    <li><a href="Eventos.html">Americano</a></li>
+                                    <li><a href="Eventos.html">Artes Marciales</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Equestre</a></li>
+                                  <li><a href="Eventos.html">Deportes extremos</a></li>
+                                  <li><a href="Eventos.html">Handball</a></li>
+                                  <li><a href="Eventos.html">Rodeo</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="SolicitudBoleto.html">Solicitud de Boleto</a></li>
+                <li><a href="Fan_Id.html">Generar Fan_Id</a></li>
+            </ul>
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+      </nav>
+
+      <div style="height: 100px;"></div>
+      <div class="ticket">
+        <div class="header">
+            <h1>Boleto electrónico</h1>
+            <div class="empresa">CODDEV</div>
+        </div>
+        <h2>Imagine Dragons en México</h2>
+        <h3>Mercury World Tour</h3>
+        <div class="content">
+            <div>
+                <span>Clave del evento</span> TOCH123
+            </div>
+            <div>
+                <span>Tipo de boleto</span> Adulto
+            </div>
+            <div>
+                <span>Sección/pasillo</span> R2
+            </div>
+            <div>
+                <span>Fila/palco</span> G
+            </div>
+            <div>
+                <span>Asiento</span> 24
+            </div>
+            <div>
+                <span>Precio</span> 2600
+            </div>
+            <div>
+                <span>Fecha del evento</span> 20/05/2024, 21:00 - 23:00 P.M.
+            </div>
+            <div>
+                <span>Dirección</span> palacio de los deportes, Ciudad de México, CDMX.
+            </div>
+            <div>
+                <span>Nombre</span> Cliente
+            </div>
+            <div>
+                <span>E-Mail</span> cliente.123@gmail.com
+            </div>
+            <div>
+                <span>Forma de Pago</span> Debito
+            </div>
+            <div>
+                <span>Acceso</span> PUERTA 2
+            </div>
+        </div>
+        <div class="qr">
+            <a href="Pago.html"><img src="QR.png" alt="QR Code"></a>
+        </div>
+    </div>
+  </body>
+</html>
+=======
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleto Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .ticket {
+            border: 2px solid #ccc;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            color: red;
+        }
+        .header .empresa {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .content div {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .content div span {
+            display: block;
+            font-weight: bold;
+        }
+        .qr {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <h1>Boleto electrónico</h1>
+            <div class="empresa">CODDEV</div>
+        </div>
+        <h2>Imagine Dragons en México</h2>
+        <h3>Mercury World Tour</h3>
+        <div class="content">
+            <div>
+                <span>Clave del evento</span> TOCH123
+            </div>
+            <div>
+                <span>Tipo de boleto</span> Adulto
+            </div>
+            <div>
+                <span>Sección/pasillo</span> R2
+            </div>
+            <div>
+                <span>Fila/palco</span> G
+            </div>
+            <div>
+                <span>Asiento</span> 24
+            </div>
+            <div>
+                <span>Precio</span> 2600
+            </div>
+            <div>
+                <span>Fecha del evento</span> 20/05/2024, 21:00 - 23:00 P.M.
+            </div>
+            <div>
+                <span>Dirección</span> palacio de los deportes, Ciudad de México, CDMX.
+            </div>
+            <div>
+                <span>Nombre</span> Cliente
+            </div>
+            <div>
+                <span>E-Mail</span> cliente.123@gmail.com
+            </div>
+            <div>
+                <span>Forma de Pago</span> Debito
+            </div>
+            <div>
+                <span>Acceso</span> PUERTA 2
+            </div>
+        </div>
+        <div class="qr">
+            <img src="QR.png" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
+

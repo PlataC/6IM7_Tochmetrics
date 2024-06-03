@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <title>Validación del Fan_Id</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .left img {
+            margin-bottom: 20px;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .ticket {
+            flex: 1;
+        }
+        .ticket h1 {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .ticket div {
+            margin-bottom: 10px;
+        }
+        .ticket label {
+            font-weight: bold;
+        }
+        .ticket .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ticket .row div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .ticket .row div:last-child {
+            margin-right: 0;
+        }
+        .ticket img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100px;
+        }
+        .ticket input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Agrega estilo para campos de solo lectura */
+        .ticket input[readonly] {
+            background-color: #f4f4f4;
+            color: #555;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html">Coddev</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                    <a href="#" class="desktop-item">Conciertos</a>
+
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Conciertos</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="img.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Todos los Conciertos</a></li>
+                                    <li><a href="Eventos.html">Infantil</a></li>
+                                    <li><a href="Eventos.html">Pop</a></li>
+                                    <li><a href="Eventos.html">Rock</a></li>
+                                    <li><a href="Eventos.html">Festivales</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Flamenco</a></li>
+                                    <li><a href="Eventos.html">Jazz</a></li>
+                                    <li><a href="Eventos.html">Urbano</a></li>
+                                    <li><a href="Eventos.html">Electrónica</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Instrumental</a></li>
+                                  <li><a href="Eventos.html">Reggae</a></li>
+                                  <li><a href="Eventos.html">Country</a></li>
+                                  <li><a href="Eventos.html">Folk</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Teatro</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Teatro</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="img.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Todos los Eventos Teatro</a></li>
+                                    <li><a href="Eventos.html">Ballet</a></li>
+                                    <li><a href="Eventos.html">Danza</a></li>
+                                    <li><a href="Eventos.html">Obras de Teatro</a></li>
+                                    <li><a href="Eventos.html">Comedia</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Moda</a></li>
+                                    <li><a href="Eventos.html">Drama</a></li>
+                                    <li><a href="Eventos.html">Exhibiciones</a></li>
+                                    <li><a href="Eventos.html">Orquestas</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Opera</a></li>
+                                  <li><a href="Eventos.html">Música Clásica</a></li>
+                                  <li><a href="Eventos.html">Musicales</a></li>
+                                  <li><a href="Eventos.html">Coros</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Deportes</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Deportes</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="img.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Automovilismo</a></li>
+                                    <li><a href="Eventos.html">Fútbol</a></li>
+                                    <li><a href="Eventos.html">Tenis</a></li>
+                                    <li><a href="Eventos.html">Box</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Toreo</a></li>
+                                    <li><a href="Eventos.html">Bésibol</a></li>
+                                    <li><a href="Eventos.html">Americano</a></li>
+                                    <li><a href="Eventos.html">Artes Marciales</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Equestre</a></li>
+                                  <li><a href="Eventos.html">Deportes extremos</a></li>
+                                  <li><a href="Eventos.html">Handball</a></li>
+                                  <li><a href="Eventos.html">Rodeo</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="SolicitudBoleto.html">Solicitud de Boleto</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div style="height: 100px;"></div>
+        <div class="container">
+            <div class="left">
+                <img src="persona.png" alt="Foto de la persona">
+                <img src="credencial.png" alt="Foto de la credencial">
+            </div>
+            <div class="ticket">
+                <h1>Boleto Electrónico</h1>
+                <div>
+                    <label for="evento">Evento:</label>
+                    <input type="text" id="evento" name="evento" readonly value="Concierto de Rock">
+                </div>
+                <div>
+                    <label for="concierto">Concierto:</label>
+                    <input type="text" id="concierto" name="concierto" readonly value="The Rock Band">
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="clave">Clave del evento:</label>
+                        <input type="text" id="clave" name="clave" readonly value="CR123456">
+                    </div>
+                    <div>
+                        <label for="tipo-boleto">Tipo de boleto:</label>
+                        <input type="text" id="tipo-boleto" name="tipo-boleto" readonly value="VIP">
+                    </div>
+                    <div>
+                        <label for="seccion">Sección/pasillo:</label>
+                        <input type="text" id="seccion" name="seccion" readonly value="A">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="fila">Fila/palco:</label>
+                        <input type="text" id="fila" name="fila" readonly value="Fila A">
+                    </div>
+                    <div>
+                        <label for="asiento">Asiento:</label>
+                        <input type="text" id="asiento" name="asiento" readonly value="A25">
+                    </div>
+                    <div>
+                        <label for="precio">Precio:</label>
+                        <input type="text" id="precio" name="precio" readonly value="$150.00">
+                    </div>
+                </div>
+                <div>
+                    <label for="fecha">Fecha del evento:</label>
+                    <input type="text" id="fecha" name="fecha" readonly value="20 de julio de 2024">
+                </div>
+                <div>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" readonly value="Avenida Principal, Ciudad">
+                </div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" readonly value="Juan Pérez">
+                </div>
+                <div>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" readonly value="juanperez@gmail.com">
+                </div>
+                <div>
+                    <label for="pago">Tipo de Pago:</label>
+                    <input type="text" id="pago" name="pago" readonly value="Tarjeta de Crédito">
+                </div>
+                <div>
+                    <label for="acceso">Acceso:</label>
+                    <input type="text" id="acceso" name="acceso" readonly value="Entrada Principal">
+                </div>
+                <img src="qrcode.png" alt="Código QR">
+            </div>
+        </div>
+</body>
+</html>

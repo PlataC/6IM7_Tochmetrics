@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <title>Validación del Fan_Id</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .left img {
+            margin-bottom: 20px;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .ticket {
+            flex: 1;
+        }
+        .ticket h1 {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .ticket div {
+            margin-bottom: 10px;
+        }
+        .ticket label {
+            font-weight: bold;
+        }
+        .ticket .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ticket .row div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .ticket .row div:last-child {
+            margin-right: 0;
+        }
+        .ticket img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100px;
+        }
+        .ticket input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Agrega estilo para campos de solo lectura */
+        .ticket input[readonly] {
+            background-color: #f4f4f4;
+            color: #555;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html">Coddev</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                    <a href="#" class="desktop-item">Conciertos</a>
+      
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Conciertos</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="conciertos.png" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Todos los Conciertos</a></li>
+                                    <li><a href="Eventos.html">Infantil</a></li>
+                                    <li><a href="Eventos.html">Pop</a></li>
+                                    <li><a href="Eventos.html">Rock</a></li>
+                                    <li><a href="Eventos.html">Festivales</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Flamenco</a></li>
+                                    <li><a href="Eventos.html">Jazz</a></li>
+                                    <li><a href="Eventos.html">Urbano</a></li>
+                                    <li><a href="Eventos.html">Electrónica</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Instrumental</a></li>
+                                  <li><a href="Eventos.html">Reggae</a></li>
+                                  <li><a href="Eventos.html">Country</a></li>
+                                  <li><a href="Eventos.html">Folk</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Teatro</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Teatro</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="teatro.png" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Todos los Eventos Teatro</a></li>
+                                    <li><a href="Eventos.html">Ballet</a></li>
+                                    <li><a href="Eventos.html">Danza</a></li>
+                                    <li><a href="Eventos.html">Obras de Teatro</a></li>
+                                    <li><a href="Eventos.html">Comedia</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Moda</a></li>
+                                    <li><a href="Eventos.html">Drama</a></li>
+                                    <li><a href="Eventos.html">Exhibiciones</a></li>
+                                    <li><a href="Eventos.html">Orquestas</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Opera</a></li>
+                                  <li><a href="Eventos.html">Música Clásica</a></li>
+                                  <li><a href="Eventos.html">Musicales</a></li>
+                                  <li><a href="Eventos.html">Coros</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                
+                </li>
+                
+                <li>
+                    <a href="#" class="desktop-item">Deportes</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Deportes</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="deportes.png" alt="">
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Automovilismo</a></li>
+                                    <li><a href="Eventos.html">Fútbol</a></li>
+                                    <li><a href="Eventos.html">Tenis</a></li>
+                                    <li><a href="Eventos.html">Box</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                    <li><a href="Eventos.html">Toreo</a></li>
+                                    <li><a href="Eventos.html">Bésibol</a></li>
+                                    <li><a href="Eventos.html">Americano</a></li>
+                                    <li><a href="Eventos.html">Artes Marciales</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                
+                                <ul class="mega-links">
+                                  <li><a href="Eventos.html">Equestre</a></li>
+                                  <li><a href="Eventos.html">Deportes extremos</a></li>
+                                  <li><a href="Eventos.html">Handball</a></li>
+                                  <li><a href="Eventos.html">Rodeo</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="SolicitudBoleto.html">Solicitud de Boleto</a></li>
+                <li><a href="Fan_Id.html">Generar Fan_Id</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div style="height: 100px;"></div>
+    <center> <h1>Fan Id</h1> </center>
+        <div class="container">
+            
+                <div class="left">
+                    <img src="perfil.png" alt="Foto de la persona" height="1200px">
+                    <div style="height: 100px;"></div>
+                    <img src="ine.jpg" alt="Foto de la credencial">
+                </div>
+                <form action="NotificationsFanId.html">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Datos Personales</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Correo Electronico</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+            
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">Estado</label>
+                                    <input type="text" id="state" name="state" placeholder="Ciudad de México">
+                                </div>
+                                <div class="col-50">
+                                    <label for="state">Municipio</label>
+                                    <input type="text" id="state" name="state" placeholder="Cuauhtémoc">
+                                    </div>
+                                <div class="col-50">
+                                    <label for="zip">Cadigo Postal</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-50">
+                            <h3>Formas de Pago</h3>
+                            <label for="fname">Tarjetas aceptadas</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;">VISA</i>
+                                <i class="fa fa-cc-amex" style="color:blue;">    </i>
+                                <i class="fa fa-cc-mastercard" style="color:red;">MASTERCARD</i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+
+                            <label for="cname">Nombre del Titular de la Tarjeta</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+
+                            <label for="ccnum">Número Tarjeta de Crédito</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+                            <label for="expmonth">Exp Mes</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Año</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Generar Fan Id" class="btn">
+                    </div>
+                </form>
+
+            <section class="footer">
+                <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Compressions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="links">
+                    <li><a href="#">Free Designs</a></li>
+                    <li><a href="#">Latest Designs</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Popular Designs</a></li>
+                    <li><a href="#">Art Skills</a></li>
+                    <li><a href="#">New Uploads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="links">
+                    <li><a href="#">Customer Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Media Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Subscribe to our newsletter for a weekly dose
+                        of news, updates, helpful tips, and
+                        exclusive offers.
+                    </p>
+                    <form action="#">
+                        <input type="text" placeholder="Tu Correo" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+</body>
+</html>
+
