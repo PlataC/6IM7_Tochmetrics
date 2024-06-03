@@ -238,3 +238,105 @@
     </div>
   </body>
 </html>
+=======
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleto Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .ticket {
+            border: 2px solid #ccc;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            color: red;
+        }
+        .header .empresa {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .content div {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .content div span {
+            display: block;
+            font-weight: bold;
+        }
+        .qr {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <h1>Boleto electrónico</h1>
+            <div class="empresa">CODDEV</div>
+        </div>
+        <h2>Imagine Dragons en México</h2>
+        <h3>Mercury World Tour</h3>
+        <div class="content">
+            <div>
+                <span>Clave del evento</span> TOCH123
+            </div>
+            <div>
+                <span>Tipo de boleto</span> Adulto
+            </div>
+            <div>
+                <span>Sección/pasillo</span> R2
+            </div>
+            <div>
+                <span>Fila/palco</span> G
+            </div>
+            <div>
+                <span>Asiento</span> 24
+            </div>
+            <div>
+                <span>Precio</span> 2600
+            </div>
+            <div>
+                <span>Fecha del evento</span> 20/05/2024, 21:00 - 23:00 P.M.
+            </div>
+            <div>
+                <span>Dirección</span> palacio de los deportes, Ciudad de México, CDMX.
+            </div>
+            <div>
+                <span>Nombre</span> Cliente
+            </div>
+            <div>
+                <span>E-Mail</span> cliente.123@gmail.com
+            </div>
+            <div>
+                <span>Forma de Pago</span> Debito
+            </div>
+            <div>
+                <span>Acceso</span> PUERTA 2
+            </div>
+        </div>
+        <div class="qr">
+            <img src="QR.png" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
+
