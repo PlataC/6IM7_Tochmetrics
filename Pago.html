@@ -10,48 +10,6 @@
       <script src="script.js" defer></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .ticket {
-        border: 2px solid #ccc;
-        padding: 20px;
-        max-width: 600px;
-        margin: auto;
-    }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header h1 {
-        color: red;
-    }
-    .header .empresa {
-        background-color: #007bff;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-    .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-    .content div {
-        border: 1px solid #ccc;
-        padding: 10px;
-    }
-    .content div span {
-        display: block;
-        font-weight: bold;
-    }
-    .qr {
-        text-align: center;
-        margin-top: 20px;
-    }
-</style>
   <body>
       <nav>
           <div class="wrapper">
@@ -59,8 +17,8 @@
               <input type="radio" name="slider" id="menu-btn">
               <input type="radio" name="slider" id="close-btn">
               <ul class="nav-links">
-                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li>
+                  <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                  <li>
                     <a href="#" class="desktop-item">Conciertos</a>
       
                     <input type="checkbox" id="showMega">
@@ -181,162 +139,145 @@
                 </li>
                 <li><a href="SolicitudBoleto.html">Solicitud de Boleto</a></li>
                 <li><a href="Fan_Id.html">Generar Fan_Id</a></li>
-            </ul>
+              </ul>
               <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
           </div>
       </nav>
 
       <div style="height: 100px;"></div>
-      <div class="ticket">
-        <div class="header">
-            <h1>Boleto electrónico</h1>
-            <div class="empresa">CODDEV</div>
-        </div>
-        <h2>Imagine Dragons en México</h2>
-        <h3>Mercury World Tour</h3>
-        <div class="content">
-            <div>
-                <span>Clave del evento</span> TOCH123
+
+      <h1 align="center">Pago</h1>
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="NotificationThanks.html">
+        
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Correo Electronico</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> FAN ID</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">Estado</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
             </div>
-            <div>
-                <span>Tipo de boleto</span> Adulto
+
+            <div class="col-50">
+              <h3>Pago</h3>
+              <label for="fname">Tarjetas aceptadas</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Nombre del Titular de la Tarjeta</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Número Tarjeta de Crédito</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Mes</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Año</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
             </div>
-            <div>
-                <span>Sección/pasillo</span> R2
-            </div>
-            <div>
-                <span>Fila/palco</span> G
-            </div>
-            <div>
-                <span>Asiento</span> 24
-            </div>
-            <div>
-                <span>Precio</span> 2600
-            </div>
-            <div>
-                <span>Fecha del evento</span> 20/05/2024, 21:00 - 23:00 P.M.
-            </div>
-            <div>
-                <span>Dirección</span> palacio de los deportes, Ciudad de México, CDMX.
-            </div>
-            <div>
-                <span>Nombre</span> Cliente
-            </div>
-            <div>
-                <span>E-Mail</span> cliente.123@gmail.com
-            </div>
-            <div>
-                <span>Forma de Pago</span> Debito
-            </div>
-            <div>
-                <span>Acceso</span> PUERTA 2
-            </div>
-        </div>
-        <div class="qr">
-            <a href="Pago.html"><img src="QR.png" alt="QR Code"></a>
-        </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continuar con la Compra" class="btn">
+        </form>
+      </div>
     </div>
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <p><a href="Entrada.html">Formula 1 Gran Premio de México 2024</a> <span class="price">$4,500</span></p>
+        
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$4,500</b></span></p>
+      </div>
+    </div>
+  </div>
+
+      
+
+        <section class="footer">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Info</h4>
+              <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Compressions</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Collection</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Explore</h4>
+              <ul class="links">
+                <li><a href="#">Free Designs</a></li>
+                <li><a href="#">Latest Designs</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Popular Designs</a></li>
+                <li><a href="#">Art Skills</a></li>
+                <li><a href="#">New Uploads</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul class="links">
+                <li><a href="#">Customer Agreement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">GDPR</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Media Kit</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>
+                Subscribe to our newsletter for a weekly dose
+                of news, updates, helpful tips, and
+                exclusive offers.
+              </p>
+              <form action="#">
+                <input type="text" placeholder="Tu Correo" required>
+                <button type="submit">SUBSCRIBE</button>
+              </form>
+              <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
+        </section>
   </body>
 </html>
-=======
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boleto Electrónico</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .ticket {
-            border: 2px solid #ccc;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header h1 {
-            color: red;
-        }
-        .header .empresa {
-            background-color: #007bff;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .content div {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .content div span {
-            display: block;
-            font-weight: bold;
-        }
-        .qr {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="ticket">
-        <div class="header">
-            <h1>Boleto electrónico</h1>
-            <div class="empresa">CODDEV</div>
-        </div>
-        <h2>Imagine Dragons en México</h2>
-        <h3>Mercury World Tour</h3>
-        <div class="content">
-            <div>
-                <span>Clave del evento</span> TOCH123
-            </div>
-            <div>
-                <span>Tipo de boleto</span> Adulto
-            </div>
-            <div>
-                <span>Sección/pasillo</span> R2
-            </div>
-            <div>
-                <span>Fila/palco</span> G
-            </div>
-            <div>
-                <span>Asiento</span> 24
-            </div>
-            <div>
-                <span>Precio</span> 2600
-            </div>
-            <div>
-                <span>Fecha del evento</span> 20/05/2024, 21:00 - 23:00 P.M.
-            </div>
-            <div>
-                <span>Dirección</span> palacio de los deportes, Ciudad de México, CDMX.
-            </div>
-            <div>
-                <span>Nombre</span> Cliente
-            </div>
-            <div>
-                <span>E-Mail</span> cliente.123@gmail.com
-            </div>
-            <div>
-                <span>Forma de Pago</span> Debito
-            </div>
-            <div>
-                <span>Acceso</span> PUERTA 2
-            </div>
-        </div>
-        <div class="qr">
-            <img src="QR.png" alt="QR Code">
-        </div>
-    </div>
-</body>
-</html>
-
